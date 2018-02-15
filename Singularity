@@ -27,7 +27,6 @@ LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
 
 %post
 apt-get -y update
-apt-get install -y g++ autoconf patch libtool make git g++ automake
 apt-get install -y software-properties-common python-software-properties
 apt-get clean
 apt-get purge
@@ -35,19 +34,18 @@ rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 
 apt-get -y update
-apt-get install -y cmake
-apt-get install -y qt4-dev-tools qt4-default qt4-qtconfig qt4-qmake
-apt-get install -y libqt4-dev libqt4-opengl-dev libqt4-svg
-apt-get install -y libqtwebkit4 libqtwebkit-dev
-apt-get install -y libsvm-dev libglpk-dev \
-                    libzip-dev zlib1g-dev \
-                    libxerces-c-dev \
-                    libbz2-dev
-apt-get install -y libboost-date-time-dev \
-                    libboost-iostreams-dev \
+apt-get install -y build-essential cmake autoconf patch libtool automake
+apt-get install -y qt4-default libqtwebkit-dev
+apt-get install -y libeigen3-dev \
+                    libsqlite3-dev \
                     libboost-regex-dev \
+                    libboost-iostreams-dev \
+                    libboost-date-time-dev \
                     libboost-math-dev \
-                    libboost-random-dev
+                    libxerces-c-dev \
+                    libglpk-dev \
+                    libsvm-dev \
+                    libbz2-dev
 apt-get clean
 apt-get purge
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
