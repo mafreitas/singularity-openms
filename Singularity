@@ -99,7 +99,6 @@ make UTILS -j6
 make install -j6
 rm -rf src doc CMakeFiles
 
-cd /usr/local/
-zip -r openms2.3.0.zip lib/lib* share/OpenMS/* bin/*
 cd /
+
 rm -rf /build_tmp
