@@ -27,7 +27,7 @@ LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
 
 %post
 apt-get -y update
-apt-get install -y software-properties-common python-software-properties
+apt-get install -y git software-properties-common python-software-properties
 apt-get clean
 apt-get purge
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
