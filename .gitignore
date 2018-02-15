@@ -1,0 +1,5 @@
+Singularity.bak
+.DS_Store
+.vagrant
+openms.2.3.simg
+Vagrantfile
