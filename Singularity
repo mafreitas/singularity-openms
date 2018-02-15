@@ -90,7 +90,7 @@ cd /build_tmp
 mkdir openms-build
 cd openms-build
 
-cmake -DCMAKE_PREFIX_PATH="/home/biodocker/contrib-build/;/usr/;/usr/local" \
+cmake -DCMAKE_PREFIX_PATH="/build_tmp/contrib-build/;/usr/;/usr/local" \
         -DCMAKE_INSTALL_PREFIX=/usr/local/ \
         -DBOOST_USE_STATIC=OFF \
         -DHAS_XSERVER=Off ../OpenMS
