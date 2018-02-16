@@ -3,3 +3,4 @@ Singularity.bak
 .vagrant
 openms.2.3.simg
 Vagrantfile
+*.bak
