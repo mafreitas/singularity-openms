@@ -47,4 +47,4 @@ make install -j6
 rm -rf src doc CMakeFiles
 
 cd $HOME
-rm -rf contrib contrib-build openms-build_tmp
+rm -rf contrib contrib-build openms-build
