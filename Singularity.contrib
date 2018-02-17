@@ -1,0 +1,19 @@
+BootStrap: docker
+From: ubuntu:trusty
+
+%environment
+LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+
+%post
+# build contrib
+cd $HOME
+git clone https://github.com/OpenMS/contrib.git
+rm -rf contrib/.git/
+mkdir contrib-build
+cd $HOME/contrib-build
+
+cmake -DBUILD_TYPE=SEQAN ../contrib && rm -rf archives src
+cmake -DBUILD_TYPE=WILDMAGIC ../contrib && rm -rf archives src
+cmake -DBUILD_TYPE=EIGEN ../contrib && rm -rf archives src
+cmake -DBUILD_TYPE=COINOR ../contrib && rm -rf archives src
+cmake -DBUILD_TYPE=SQLITE ../contrib && rm -rf archives src
