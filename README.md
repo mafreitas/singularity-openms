@@ -33,7 +33,7 @@ sudo singularity build singularity-openms.simg shub://mafreitas/singularity-open
 ```
 
 # Containers
-- Latest & 2.3+ - contain the latest build (2.3.0) and thirdparty tools.  
+- Latest & 2.3+ - contain the latest release (2.3.0) and thirdparty tools.  
 - 2.2+ - contains 2.2.0 and thirdparty tools . 
 - contrib - contains the dependencies and contributing libraries. 
 - dependencies - contains the base image with all build dependencies.  
