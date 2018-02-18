@@ -17,6 +17,7 @@ PATH=/usr/local/openms_thirdparty/Linux/64bit/SpectraST:$PATH
 PATH=/usr/local/openms_thirdparty/Linux/64bit/XTandem:$PATH
 PATH=/usr/local/bin/:$PATH
 LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+OPEN_MS_DATA=/usr/local/share/OpenMS
 
 %post
 cd $HOME
