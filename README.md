@@ -20,7 +20,8 @@ singularity pull --hash shub://mafreitas/singularity-openms
 ```
 
 ## Shell into the container:
-```singularity shell shub://mafreitas/singularity-openms
+```
+singularity shell shub://mafreitas/singularity-openms
 ```
 ## Run the container:
 ```
