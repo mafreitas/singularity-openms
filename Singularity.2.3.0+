@@ -2,22 +2,22 @@ BootStrap: shub
 From: mafreitas/singularity-openms:contrib
 
 %environment
-PATH=/usr/local/openms_thirdparty/All/:$PATH
-PATH=/usr/local/openms_thirdparty/All/LuciPHOr2:$PATH
-PATH=/usr/local/openms_thirdparty/All/MSGFPlus:$PATH
-PATH=/usr/local/openms_thirdparty/All/Sirius:$PATH
-PATH=/usr/local/openms_thirdparty/Linux/64bit/:$PATH
-PATH=/usr/local/openms_thirdparty/Linux/64bit/Comet:$PATH
-PATH=/usr/local/openms_thirdparty/Linux/64bit/Fido:$PATH
-PATH=/usr/local/openms_thirdparty/Linux/64bit/MyriMatch:$PATH
-PATH=/usr/local/openms_thirdparty/Linux/64bit/OMSSA:$PATH
-PATH=/usr/local/openms_thirdparty/Linux/64bit/Percolator:$PATH
-PATH=/usr/local/openms_thirdparty/Linux/64bit/Sirius:$PATH
-PATH=/usr/local/openms_thirdparty/Linux/64bit/SpectraST:$PATH
-PATH=/usr/local/openms_thirdparty/Linux/64bit/XTandem:$PATH
-PATH=/usr/local/bin/:$PATH
-LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
-OPENMS_DATA_PATH=/usr/local/share/OpenMS
+export PATH=/usr/local/openms_thirdparty/All/:$PATH
+export PATH=/usr/local/openms_thirdparty/All/LuciPHOr2:$PATH
+export PATH=/usr/local/openms_thirdparty/All/MSGFPlus:$PATH
+export PATH=/usr/local/openms_thirdparty/All/Sirius:$PATH
+export PATH=/usr/local/openms_thirdparty/Linux/64bit/:$PATH
+export PATH=/usr/local/openms_thirdparty/Linux/64bit/Comet:$PATH
+export PATH=/usr/local/openms_thirdparty/Linux/64bit/Fido:$PATH
+export PATH=/usr/local/openms_thirdparty/Linux/64bit/MyriMatch:$PATH
+export PATH=/usr/local/openms_thirdparty/Linux/64bit/OMSSA:$PATH
+export PATH=/usr/local/openms_thirdparty/Linux/64bit/Percolator:$PATH
+export PATH=/usr/local/openms_thirdparty/Linux/64bit/Sirius:$PATH
+export PATH=/usr/local/openms_thirdparty/Linux/64bit/SpectraST:$PATH
+export PATH=/usr/local/openms_thirdparty/Linux/64bit/XTandem:$PATH
+export PATH=/usr/local/bin/:$PATH
+export OPENMS_DATA_PATH=/usr/local/share/OpenMS
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
 %post
 cd $HOME
